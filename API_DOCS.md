@@ -28,7 +28,7 @@ Optional extended description in CommonMark or HTML.
 | ---- | ----------- |
 | 200 | A JSON array of user names |
 
-### /users
+### /users/{userId}
 
 #### GET
 ##### Summary:
@@ -38,6 +38,12 @@ Returns a list of users.
 ##### Description:
 
 Optional extended description in CommonMark or HTML.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| userId | path | A small description about this | No | integer |
 
 ##### Responses
 
