@@ -1,0 +1,20 @@
+swagger: '2.0'
+
+info:
+  title: Test API
+  description: Just a test of combining swagger yaml files
+  version: 1.0.0
+
+host: test.api.com
+basePath: /v1
+schemes:
+  - https
+
+securityDefinitions:
+  apiKey:
+    type: apiKey
+    in: header
+    name: Authorization
+
+security:
+  - apiKey: []
