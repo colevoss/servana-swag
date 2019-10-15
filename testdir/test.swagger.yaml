@@ -9,6 +9,16 @@ paths:
           required: false
           type: integer
           description: 'A small description about this'
+        - in: query
+          name: sort
+          description: sort order
+          required: true
+          type: string
+          enum: [asc, desc]
+        - in: body
+          description: The user to create.
+          schema:
+            $ref: '#/definitions/User'
 
       responses:
         '200': # status code
@@ -25,3 +35,6 @@ definitions:
     properties:
       id:
         type: string
+      title:
+        type: string
+        example: Hello Hello

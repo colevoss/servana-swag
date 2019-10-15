@@ -44,6 +44,8 @@ Optional extended description in CommonMark or HTML.
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ---- |
 | userId | path | A small description about this | No | integer |
+| sort | query | sort order | Yes | string |
+|  | body | The user to create. | No | [User](#user) |
 
 ##### Responses
 
@@ -66,7 +68,7 @@ Optional extended description in CommonMark or HTML.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | A JSON array of user names | [Blogs](#blogs) |
+| 200 | A `Array<Blogs>` array of user names | [ [Blogs](#blogs) ] |
 
 ### Models
 
@@ -82,9 +84,11 @@ Optional extended description in CommonMark or HTML.
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | id | string |  | No |
+| title | string |  | No |
 
 #### Blogs
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | id | string |  | No |
+| user | [object Object] |  | No |

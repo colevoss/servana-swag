@@ -16,7 +16,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test",
     "version": "git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "ts-node": "ts-node"
   },
   "keywords": [],
   "author": "",
